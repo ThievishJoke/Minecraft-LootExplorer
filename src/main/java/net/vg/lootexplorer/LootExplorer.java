@@ -38,7 +38,7 @@ public class LootExplorer implements ModInitializer {
 	 */
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Initailizing Mod: {} v{}", MOD_ID, MOD_VERSION);
+		LOGGER.info("Initializing Mod: {} v{}", MOD_ID, MOD_VERSION);
 
 		ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new LootHandler());
 		ModItemGroups.registerItemGroups();
@@ -58,6 +58,6 @@ public class LootExplorer implements ModInitializer {
 
 		// If the mod container is found, return the version from the metadata.
 		// Otherwise, return a default version "1.0.0".
-		return modContainer.map(container -> container.getMetadata().getVersion().getFriendlyString()).orElse("1.0.0");
+		return modContainer.map(container -> container.getMetadata().getVersion().getFriendlyString()).orElse("1.1.0");
 	}
 }
