@@ -27,6 +27,6 @@ public class ModItemGroups {
     // Method to register the item groups, called during the mod initialization
     public static void registerItemGroups() {
         LootExplorer.LOGGER.info("Registering Item Groups for " + LootExplorer.MOD_ID);
-
+        LootExplorer.LOGGER.info("Item list size: {}", LootHandler.itemList.size());
     }
 }
